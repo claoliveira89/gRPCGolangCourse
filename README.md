@@ -5,8 +5,8 @@ From the Udemy course "gRPC[Golang] Master Class: Build Modern API &amp; Microse
 ### Section 1: gRPC Course Overview
 - [X] 1. gRPC Introduction
 - [X] 2. Course Objective
-- [ ] 3. About your instructor
-- [ ] 4. Important message
+- [X] 3. About your instructor
+- [X] 4. Important message
 
 ### Section 2: Code Download
 - [ ] 5. Code Download
