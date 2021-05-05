@@ -1,0 +1,66 @@
+# gRPC [Golang] Master Class: Build MOdern API & Microservices
+
+## gRPC Introduction
+- Microservices are built in different language and encompass (cover) a function of your business;
+- These microservices must exchange information and need to agree on:
+    - the API to exchange data;
+    - the data format;
+    - the error patterns;
+    - Load balancing;
+    - Many other.
+- One of the popular choice for building API is REST (HTTP-JSON)
+- While building an API:
+    - need to think about data model:
+        - JSON;
+        - XML;
+        - Something Binary?
+    - need to think about the endpoint
+        - GET /api/v1/user/123/post/456
+        - POST /api/v1/user/123/post
+    - need to think about how to invoke it and handle errors
+        - API
+        - Errors
+    - need to think about efficiency of the API
+        - how much data do I get out of one call?
+        - too much data
+        - too little data => many API calls?
+    - how about latency?
+    - how about scalability to 1000s clients?
+    - how about load balancing?
+    - how about inter operability with many languages?
+    - how about authentication, monitoring, logging?
+- gRPC is a framework that does all these stuff for us!
+- What's an API?
+    - At its core, an API is a contract, saying:
+        - send me this REQUEST (Client)
+        - I'll send you this RESPONSE (Server)
+    - It's all about the data
+    - The rest, we'll leave to the gRPC framework
+- What's gRPC?
+    - Is a free and open-source framework developed by Google;
+    - Is a part of the Cloud Native Computation Foundation (CNCF) - like Docker and Kubernetes for example;
+    - At a high level, it allows you to define REQUEST and RESPONSE for RPC (Remote Procedure Calls) and handles all the rest for you;
+    - On top of it, it's modern, fast and efficient, build on top of HTTP/2, low latency, supports streaming, language independent, and makes it super easy to plug in authentication, load balancing, logging and monitoring.
+- What's an RPC?
+    - Is a Remote Procedure Call
+    - In your CLIENT code, it looks like you're just calling a function directly on the SERVER.
+    - It's not a new concept (CORBA had this before)
+    - With gRPC, it's implemented very cleanly and solves a lot of problems
+- How to get started?
+    - At the core of gRPC, you need to define the messages and services using **Protocol Buffers**;
+    - The rest of the gRPC code will be generated for you and you'll have to provide an implementation for it;
+    - One **.proto** file works for over 12 programming languages (server and client), and allows you to use a framework that scales to millions of RPC per seconds.
+- Why Protocol Buffers?
+    - Protocol Buffers are language agnostic;
+    - Code can be generated for pretty much any language;
+    - Data is binary and efficiently serialized (small payloads);
+    - Very convenient for transporting a lot of data;
+    - Protocol Buffers allows for easy API evolution using rules;
+    - You should know the basics of Protocol Buffers before starting this course;
+- Why should I learn it?
+    - Many companies have embraced it fully in Production
+        - Google (internally and for Google Cloud services like Pub/Sub)
+        - Netflix
+        - Square (first contributor, replacement of all their APIs)
+        - CoreOS (etcd 3 is built on gRPC for server-server communication)
+    - gRPC is the future of micro-services API and mobile-server API (and maybe Web APIs)
