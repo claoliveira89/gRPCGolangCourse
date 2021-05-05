@@ -64,3 +64,25 @@
         - Square (first contributor, replacement of all their APIs)
         - CoreOS (etcd 3 is built on gRPC for server-server communication)
     - gRPC is the future of micro-services API and mobile-server API (and maybe Web APIs)
+
+## Course Objective
+- Course Objectives
+    1. Learn the gRPC theory to understando how gRPC works
+    2. Compare gRPC and REST API paradigm
+    3. Write your gRPC service definition in .proto files
+    4. Generate Server and Client COde
+    5. Implement Unary, Server Streaming, Client Streaming & Bi-Directional Streaming API
+    6. Practice your learning with Exercises & Solutions
+    7. Implement advanced concepts such as Error Handling, Deadlines & SSL Security
+    8. Get pointers to expand your learning journey and get inspired by real world gRPC services
+
+- Pre-requisites
+    - Good understanding of the programming language for this course
+    - Asynchronous programming is a plus
+    - Good Understanding of Protocol Buffers
+    - Lots of willingness to learn something new!
+    - This course will be challenging
+
+- Who is this course for?
+    - **Developers** who want to understand how to write gRPG Services and Clients
+    - **Architects** who want to understand how gRPC works and the concepts behind the different types of API
