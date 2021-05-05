@@ -3,8 +3,8 @@ From the Udemy course "gRPC[Golang] Master Class: Build Modern API &amp; Microse
 
 ## Course Content
 ### Section 1: gRPC Course Overview
-- [ ] 1. gRPC Introduction
-- [ ] 2. Course Objective
+- [X] 1. gRPC Introduction
+- [X] 2. Course Objective
 - [ ] 3. About your instructor
 - [ ] 4. Important message
 
