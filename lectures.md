@@ -201,4 +201,9 @@
     - It will be the most common format used forward, and it has the best compatibility across a wide array of programming languages;
     - It is also the easiest to learn!
 
-    
+### Youtube: Protocol Buffers Crash Course
+**Source: https://www.youtube.com/watch?v=46O73On0gyI**
+- Protocol Buffers (Protobuf) is a method of serializing structured data useful for transmitting data over the wire or storing it; Representation of structured data;
+- JSON is not a structured data: you're responsible for maintaining the righteousness of the schema.
+- With protocol buffers we need to use a structure and a schema.
+- Protocol Buffers are neutral but not agnostic: there's a compiler to give us a file in the language we want with the schema we've created.
