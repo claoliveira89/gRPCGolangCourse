@@ -207,3 +207,20 @@
 - JSON is not a structured data: you're responsible for maintaining the righteousness of the schema.
 - With protocol buffers we need to use a structure and a schema.
 - Protocol Buffers are neutral but not agnostic: there's a compiler to give us a file in the language we want with the schema we've created.
+- Benefits of ProtoBuff:
+    * Schema 
+    * Binary compact size
+    * Language neutral 
+
+- Cons:
+    * Have to have structured data (barrier to entry)
+    * More involved processed for small applications.
+    * Have to make sure to update compiled boilerplate code (bugs, security vulnerability, etc.)
+    * hard to use with JSON based application (Javascript/browser)
+
+
+- protoc compiler
+
+        $ protoc --js_out=import_style=commonjs,binary:. employees.proto 
+
+        $ npm install google-protobuf
