@@ -109,8 +109,8 @@
     - Binary Serialization
     - Uses a determined schema to encode and decode?
     - Compiled into many languages
-OBS.: What is a byte stream? Programs use byte streams to perform input and output of 8-bit bytes. What is a binary stream? Binary streams contain a sequence of bytes. 
-OBS.2: Explicação do Danniel: streams são literalmente fluxos; em programação temos algo semelhante e que são categorizados nesses ai: binários e de byte; um stream binário consegue enviar mais dados do que um de byte, pois o binário está “compactado”, e o byte é meio que uma string; no binário quem escreve e quem lê tem que saber o formato de como virá o dado, com isso economizamos em dados. um outro conceito de stream que também é aplicado, mas em outro contexto, é que geralmente eles não são carregados em memória, a gente lê de um ponto e escreve em outro imediatamente. Isso é válido para quanto temos que mexer com uma quantidade enorme de dados.
+- OBS.: What is a byte stream? Programs use byte streams to perform input and output of 8-bit bytes. What is a binary stream? Binary streams contain a sequence of bytes. 
+- OBS.2: Explicação do Danniel: streams são literalmente fluxos; em programação temos algo semelhante e que são categorizados nesses ai: binários e de byte; um stream binário consegue enviar mais dados do que um de byte, pois o binário está “compactado”, e o byte é meio que uma string; no binário quem escreve e quem lê tem que saber o formato de como virá o dado, com isso economizamos em dados. um outro conceito de stream que também é aplicado, mas em outro contexto, é que geralmente eles não são carregados em memória, a gente lê de um ponto e escreve em outro imediatamente. Isso é válido para quanto temos que mexer com uma quantidade enorme de dados.
 
 - Schema
     - Fields are indicated and aliased with a number and a tag
@@ -142,3 +142,48 @@ OBS.2: Explicação do Danniel: streams são literalmente fluxos; em programaç�
         - Certificate Pinning
         - IP Blocking
         - Behavior Analysis
+
+### Youtube: The Need for Protocol Buffers
+**Source: https://www.youtube.com/watch?v=BywIOD_Y3CE**
+- An Evolution of data:
+    1. CSV (Comma Separeted Values)
+    2. Relational tables
+    3. JSON
+        - JSON format
+        - Advantages
+            1. Data can take any form (arrays, nested elements)
+            2. Is a widely accepted format on the web
+            3. Can be read by pretty much any language
+            4. Can be easily shared over a network
+        - Disadvantages
+            1. Data has no schema enforcing
+            2. JSON Objects can be quite big in size because of repeated keys
+            3. No comments, metadata, documentation
+    4. Protocol Buffers
+        - Protocol Buffers is defined by a .proto text file;
+        - You can easily read it and understand it as a human.
+        > example.proto
+        >       
+        >       syntax = "proto3"
+        >       
+        >       message MyMessage {
+        >       int32 id = 1;
+        >       string first_name = 2;
+        >       bool is_validated = 3;
+        >       } 
+        > ------------------------------------
+
+        - Advantages:
+            - Data is fully typed
+            - Data is compressed automatically (less CPU usage)
+            - Schema (defined used .proto file) is needed to generate code and read the data
+            - Documentation can be embedded in the schema
+            - Data can be read across any language (C#, Java, Go, Python, JavaScript, etc...)
+            - Schema can evolve over time, in a safe manner (schema evolution)
+            - 3-10x smaller, 20-100x faster than XML
+            - Code is generated for you automatically!
+        - Disadvantages:
+            - Protobuf support for some languages might be lacking (but the main ones is fine);
+            - Can't "open" the serialized data with a text editor (because it's compressed and serialized)
+
+    
