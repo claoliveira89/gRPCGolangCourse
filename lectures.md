@@ -186,4 +186,19 @@
             - Protobuf support for some languages might be lacking (but the main ones is fine);
             - Can't "open" the serialized data with a text editor (because it's compressed and serialized)
 
+### Youtube: How is Protocol Buffer Used?
+**Source: https://www.youtube.com/watch?v=ZEw9YryQotE&list=PLt1SIbA8guut1SomKGlEizCHLIEkAm_6k&index=2**
+- How is Protocol Buffers Used? To share data across languages!
+    - It uses serialized data, which can be interpreted by any programming language (it's universal);
+- How is Protocol Buffers Used?
+    - Some databases may have support for Protocol Buffers data format;
+    - Lots of RPC frameworks, including gRPC, use Protocol Buffers to exchange data; 
+    - Google uses it for all their internal API;
+    - Some big projects like 'etcd' use Protocol Buffers for transporting data.
+- OBS.: What is ETCD? etcd is a strongly consistent, distributed key-value store that provides a reliable way to store data that needs to be accessed by a distributed system or cluster of machines. It gracefully handles leader elections during network partitions and can tolerate machine failure, even in the leader node. **Source: https://etcd.io/**
+- Proto2 vs Proto3
+    - Mid 2016, Google released the 3rd iteration of Protocol Buffers, named proto3;
+    - It will be the most common format used forward, and it has the best compatibility across a wide array of programming languages;
+    - It is also the easiest to learn!
+
     
