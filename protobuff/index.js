@@ -21,4 +21,4 @@ employees.push({
     id: 1003
 });
 
-fs.writeFileSync('protobuff/jasondata.json', JSON.stringify(employees));
+fs.writeFileSync('protobuff/jsondata.json', JSON.stringify(employees));
