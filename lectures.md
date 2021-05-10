@@ -240,3 +240,46 @@
     - By using gRPC, the use of Protocol Buffers means faster and more efficient communication, friendly with mobile devices that have a slower CPU;
 - gRPC can be used by any language
     - Because the code can be generated for any language, it makes it super simple to create micro-services in any language that interact with each other.
+- Summary: Why Protocol Buffers?
+    - Easy to write message definition;
+    - The definition of the  API is independent from the implementation;
+    - A huge amount of code can be generated, in any language, from a simple .proto file;
+    - The payload is binary, therefore very efficient to send / receive on a network and serialize / de-serialize on a CPU;
+
+## HTTP/2
+- What's HTTP/2?
+    - Is the newer standard for internet communications that address common pitfall of HTTP/1.1 on modern webpages;
+- How HTTP/1.1 works
+    - HTTP/1.1 was released in 1997. It has worked great for many years!
+    - HTTP/1.1 opens a new TCP connection to a server at each request;
+    - It does not compress headers(which are plaintext);
+    - It only works with Request / Response mechanism (no server push);
+    - HTTP was originally composed of two commands:
+        - GET: to ask for content;
+        - POST: to send content
+    - Nowadays, a webpage loads 80 assets on average;
+    - Headers are sent at every request and are PLAINTEXT (heavy size);
+    - Each request opens a TCP connection;
+    - These inefficiencies add latency and increase network packet size
+- How HTTP/2 works
+    - HTTP/2 was released in 2015. It has been battled tested for many years! (and was before that tested by Google under the name SPDY);
+    - HTTP/2 supports multiplexing
+        - The client and server can push messages in parallel over the same TCP connection;
+        - This greatly reduces latency;
+    - HTTP/2 supports server push
+        - Servers can push streams (multiple messages) for one request from the client;
+        - This saves round trips (latency);
+    - HTTP/2 supports header compression
+        - Headers (text based) can now be compressed;
+        - These have much less impact on the packet size;
+        - (remember the average http request may have over 20 headers, due to cookies, content cache, and application headers)
+    - HTTP/2 is binary
+        - While HTTP/1 text makes it easy for debugging, it's not efficient over the network;
+        - (Protocol Buffers is a binary protocol and makes is a great match for HTTP/2);
+        - HTTP/2 is secure (SSL is not required but recommended by default)
+- HTTP/2: Bottom Line
+    - Less chatter
+    - More efficient protocol (less bandwidth)
+    - Reduce Latency
+    - Increased Security
+    - And you get all these improvements out of the box by using the gRPC framework!
