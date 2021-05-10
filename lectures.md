@@ -283,3 +283,14 @@
     - Reduce Latency
     - Increased Security
     - And you get all these improvements out of the box by using the gRPC framework!
+
+## 4 Types of gRPC APIs
+- There are 4 types of calls/APIs in gRPC:
+    - Unary: you send something and you receive something (Request/Response);
+    - Server Streaming: as the server gets new data for the client it will just send it as it receiveis it, in only one request;
+    - Client Streaming: the client sends different requests and expects only one response from the server at some point;
+    - Bi Directional Streaming: client sends different requests and server sends different responses asynchronously.
+- Unary is what a traditional API looks like (HTTP REST);
+- HTTP/2 as we've seen, enables APIs to now have streaming capabilities;
+- The server and the client can push multiple messages as part of one request!
+- In gRPC it's very easy to define these APIs as we'll see
