@@ -303,3 +303,9 @@
 - The client decides which model works best for the performance needs;
 - gRPC Clients can perform client side load balancing;
 - As a proof of scalability: Google has 10 BILLION gRPC requests being made per second internally;
+
+## Security in gRPC (SSL)
+- By default gRPC strongly advocates for you to use SSL (encryption over the wire) in your API;
+- This means that gRPC has security as a first class citizen;
+- Each language will provide an API to load gRPC with the required certificates and provide encryption capability out of the box;
+- Additionally using Interceptors, we can also provide authentication (we'll learn about Interceptors in the advanced section).
