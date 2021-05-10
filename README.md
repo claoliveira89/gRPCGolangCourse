@@ -9,16 +9,16 @@ From the Udemy course "gRPC[Golang] Master Class: Build Modern API &amp; Microse
 - [X] 4. Important message
 
 ### Section 2: Code Download
-- [ ] 5. Code Download
+- [X] 5. Code Download
 
 ### Section 3: [Theory] gRPC Internals Deep Dive
-- [ ] 6. Why this section?
-- [ ] 7. Protocol Buffers & Language Interoperability
-- [ ] 8. HTTP/2
-- [ ] 9. 4 Types of gRPC APIs
-- [ ] 10. Scalability in gRPC
-- [ ] 11. Security in gRPC (SSL)
-- [ ] 12. gRPC vs REST
+- [X] 6. Why this section?
+- [X] 7. Protocol Buffers & Language Interoperability
+- [X] 8. HTTP/2
+- [X] 9. 4 Types of gRPC APIs
+- [X] 10. Scalability in gRPC
+- [X] 11. Security in gRPC (SSL)
+- [X] 12. gRPC vs REST
 - [ ] 13. Section Summary - why use gRPC
 - [ ] Quiz 1: Quiz on GRPC
 
