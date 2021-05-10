@@ -293,4 +293,13 @@
 - Unary is what a traditional API looks like (HTTP REST);
 - HTTP/2 as we've seen, enables APIs to now have streaming capabilities;
 - The server and the client can push multiple messages as part of one request!
-- In gRPC it's very easy to define these APIs as we'll see
+- In gRPC it's very easy to define these APIs as we'll see.
+
+## Scalability in gRPC
+- gRPC Servers are asynchronous by default;
+- This means they do not block threads on request;
+- Therefore, each gRPC server can serve millions of requests in parallel;
+- gRPC Clients can be asynchronous or synchronous (blocking);
+- The client decides which model works best for the performance needs;
+- gRPC Clients can perform client side load balancing;
+- As a proof of scalability: Google has 10 BILLION gRPC requests being made per second internally;
