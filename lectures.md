@@ -224,3 +224,19 @@
         $ protoc --js_out=import_style=commonjs,binary:. employees.proto 
 
         $ npm install google-protobuf
+
+## Protocol Buffers & Language Interoperability
+- Protocol Buffers role in gRPC:
+    - Protocol Buffers is used to define the:
+        - Messages (data, Request, Response);
+        - Service (Service name and RPC endpoints);
+    - We then generate code from it!
+- Efficiency of Protocol Buffers over JSON
+    - gRPC uses Protocol Buffers for communications;
+    - One JSON data may weight 55 bytes, and the same in protocol buffers weights 20 bytes;
+    - We save in Network Bandwidth!
+    - Parsing JSON is actually CPU intensive (because the format is human readable);
+    - Parsing Protocol Buffers (binary format) is less CPU intensive because it's closer to how a machine represents data;
+    - By using gRPC, the use of Protocol Buffers means faster and more efficient communication, friendly with mobile devices that have a slower CPU;
+- gRPC can be used by any language
+    - Because the code can be generated for any language, it makes it super simple to create micro-services in any language that interact with each other.
