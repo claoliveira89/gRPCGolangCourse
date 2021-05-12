@@ -321,4 +321,12 @@
 | Code generation through Protocol Buffers in any language - 1rst class citizen | Code generation through OpenAPI / Swagger (add-on) - 2nd class citizen |
 | RPC Based - gRPC does the plumbing for us | HTTP verbs based - we have to write the plumbing or use a 3rd party library |
 
+## Section Summary - why use gRPC
+- Why use gRPC
+    - Easy code definition in over 11 languages
+    - Uses a modern, low latency HTTP/2 transport mechanism
+    - SSL Security is built in
+    - Support for streaming APIs for maximum performance
+    - gRPC is API oriented, instead of Resource Oriented like REST
+
 
