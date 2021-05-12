@@ -19,8 +19,8 @@ From the Udemy course "gRPC[Golang] Master Class: Build Modern API &amp; Microse
 - [X] 10. Scalability in gRPC
 - [X] 11. Security in gRPC (SSL)
 - [X] 12. gRPC vs REST
-- [ ] 13. Section Summary - why use gRPC
-- [ ] Quiz 1: Quiz on GRPC
+- [X] 13. Section Summary - why use gRPC
+- [X] Quiz 1: Quiz on GRPC
 
 ### Section 4: [Hands-on] gRPC Project Overview & Setup
 - [ ] 14. Project Setup (Golang + VSCode + Protoc)
