@@ -309,3 +309,16 @@
 - This means that gRPC has security as a first class citizen;
 - Each language will provide an API to load gRPC with the required certificates and provide encryption capability out of the box;
 - Additionally using Interceptors, we can also provide authentication (we'll learn about Interceptors in the advanced section).
+
+## gRPC vs REST
+| GRPC | REST |
+| :----: | :----: |
+| Protocol Buffers - smaller, faster | JSON - text based, slower, bigger |
+| HTTP/2 (lower latency) - from 2015 | HTTP/1.1 (higher latency) - from 1997 |
+| Bidirectional & Async | Client => Server requests only |
+| Sream Support | Request/Response Support only |
+| API Oriented - "What" (no constraints - free design) | CRUD Oriented (Create - Retrieve - Update - Delete / POST GET PUT DELETE) |
+| Code generation through Protocol Buffers in any language - 1rst class citizen | Code generation through OpenAPI / Swagger (add-on) - 2nd class citizen |
+| RPC Based - gRPC does the plumbing for us | HTTP verbs based - we have to write the plumbing or use a 3rd party library |
+
+
