@@ -23,7 +23,7 @@ From the Udemy course "gRPC[Golang] Master Class: Build Modern API &amp; Microse
 - [X] Quiz 1: Quiz on GRPC
 
 ### Section 4: [Hands-on] gRPC Project Overview & Setup
-- [ ] 14. Project Setup (Golang + VSCode + Protoc)
+- [X] 14. Project Setup (Golang + VSCode + Protoc)
 - [ ] 15. Go Dependencies Setup
 - [ ] 16. Code Generation Test
 - [ ] 17. Server Setup Boilerplate Code
