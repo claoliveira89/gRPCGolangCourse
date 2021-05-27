@@ -329,4 +329,8 @@
     - Support for streaming APIs for maximum performance
     - gRPC is API oriented, instead of Resource Oriented like REST
 
+## Go Dependencies Setup
+    $ go get -u google.golang.org/grpc
+    $ go get -u github.com/golang/protobuf/protoc-gen-go
+
 
