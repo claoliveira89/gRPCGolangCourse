@@ -334,4 +334,15 @@
     $ go get -u github.com/golang/protobuf/protoc-gen-go
 
 ## Code Generation Test
+    $ sudo apt install protobuf-compiler
     $ protoc greet/greetpb/greet.proto --go_out=plugins=grpc:.
+
+- what is a .sh file? A .SH file is a simple text file that contains the commands and a little logic to it. 
+- if there's errors, try these commands:
+
+        $ go get google.golang.org/protobuf/reflect/protoreflect@v1.26.0
+
+        $ go get google.golang.org/protobuf/runtime/protoimpl@v1.26.0
+
+        $ go run tidy
+    - Or, try seeing what the error is. 
