@@ -26,7 +26,7 @@ From the Udemy course "gRPC[Golang] Master Class: Build Modern API &amp; Microse
 - [X] 14. Project Setup (Golang + VSCode + Protoc)
 - [X] 15. Go Dependencies Setup
 - [X] 16. Code Generation Test
-- [ ] 17. Server Setup Boilerplate Code
+- [X] 17. Server Setup Boilerplate Code
 - [ ] 18. Client Setup Boilerplate Code
 
 ### Section 5: [Hands-on] gRPC Unary
