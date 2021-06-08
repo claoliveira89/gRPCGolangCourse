@@ -346,3 +346,8 @@
 
         $ go run tidy
     - Or, try seeing what the error is. 
+
+## Server Setup Boilerplate Code
+- Let's setup a gRPC Server with no service on it;
+- We'll see how to properly start & stop the Server on a defined port;
+- Default port to gRPC: ':50051'
